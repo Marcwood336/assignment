@@ -19,12 +19,7 @@ const [rangeValue, setRangeValue] = useState({
   });
 
 
-function whenSubmit(){
-
-
-
-
-const response = ()=>{
+  const response = ()=>{
 
  let val= rangeValue.value
 
@@ -37,6 +32,14 @@ if(val >60 && val<80){return 4}
 if(val >80 && val<101){return 5}
 }
 
+
+function whenSubmit(){
+
+
+
+
+
+
 const mood = response()
 
 
@@ -44,12 +47,21 @@ setRangeValue(rangeValue => ({...rangeValue,submited:true}));
 setRangeValue(rangeValue => ({...rangeValue,oneToFive:mood}));
 
 
-
-
-
+    const requestOptions = {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ mood: mood })
+    };
+    fetch('https://automation.uselab.com/api/fe-test/mood', requestOptions)
+        .then(response => response.json())
+        .then(data => {
+          console.log(data);
+        });
 }
 
-console.log(rangeValue);
+
+
+
 
 
 let beforeSubmit = (<div> <h1 className={classes.mainTitle}>How are you doing today?</h1>
