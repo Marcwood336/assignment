@@ -54,8 +54,9 @@ if(props.rangeValue.value >80 && props.rangeValue.value<=100){
 
     return(<div className={classes.MoodBox}>
  
-        
+        <div className={classes.imageContainer}>
         <img src={image} className={imageClass} />
+        </div>
         <div className={classes.MoodBoxModal}/>
            
       

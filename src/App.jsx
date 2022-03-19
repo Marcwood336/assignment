@@ -2,6 +2,8 @@ import { useState } from 'react'
 import classes from './App.module.css';
 import MoodBox from './comps/MoodBox/MoodBox';
 import Slider from './comps/Slider/Slider';
+import Spinner from './comps/Spinner/Spinner';
+import ResponsePhrase from './comps/ResponsePhrase/ResponsePhrase';
 
 
 const App =()=> {
@@ -14,9 +16,27 @@ const App =()=> {
 const [rangeValue, setRangeValue] = useState({
   value:50,
   submited:false,
-  phrases:['','mood1','mood2','mood3','mood4','mood5'],
-  oneToFive :''
+  oneToFive :'',
+  phrase:false,
+
+
   });
+
+
+
+
+  
+ function setRange(event){
+
+
+
+  let val =event.target.value;
+
+
+   setRangeValue(rangeValue => ({...rangeValue,value:val}));
+
+
+  }
 
 
   const response = ()=>{
@@ -55,9 +75,24 @@ setRangeValue(rangeValue => ({...rangeValue,oneToFive:mood}));
     fetch('https://automation.uselab.com/api/fe-test/mood', requestOptions)
         .then(response => response.json())
         .then(data => {
-          console.log(data);
-        });
+          return data
+
+        })
+        .then(data=>{
+
+
+          setTimeout( function(){
+             setRangeValue(rangeValue=>({...rangeValue,phrase:data.data.text}))
+          },2000)
+
+        })
+        //  setTimeout( function(){
+        //      setRangeValue(rangeValue=>({...rangeValue,phrase:'text'}))
+        //   },2000)
 }
+
+     
+
 
 
 
@@ -70,8 +105,9 @@ let beforeSubmit = (<div> <h1 className={classes.mainTitle}>How are you doing to
 
 let afterSubmit = (<div>
                   <h1 className={classes.mainTitle}>
-                    {rangeValue.phrases[rangeValue.oneToFive]}
+                    
                   </h1>
+                  {rangeValue.phrase? <ResponsePhrase rangeValue={rangeValue.oneToFive} phrase={rangeValue.phrase}/> :<Spinner/>}
                   </div>)
 
 
@@ -79,18 +115,6 @@ let afterSubmit = (<div>
 
 
 
-
- function setRange(event){
-
-   console.log();
-
-  let val =event.target.value;
-
-
-   setRangeValue(rangeValue => ({...rangeValue,value:val}));
-
-
-  }
 
 
   return (

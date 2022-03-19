@@ -31,13 +31,9 @@ input[type='range']{
 
 .slider {
   -webkit-appearance: none;
-  width: 100%;
-  height: 25px;
-  background: #f84a4a;
-  outline: none;
-  opacity: 1;
-  
 
+
+  
 }
 
 .slider::before{
@@ -45,12 +41,15 @@ input[type='range']{
   content:'-';
   font-size: 2vh;
    margin-right: 1vh ;
+   color: red;
+
 }
 .slider::after{
   content:'+';
-   font-weight: 400;
+   font-weight: 900;
    font-size: 2vh;
    margin-left: 1vh ;
+  color: green;
 }
 
 
@@ -60,15 +59,16 @@ input[type='range']{
 .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  width: 100px;
-  height: 25px;
+  width: 13vw;
+  height: 3vw;
   background: #808080;
   cursor: pointer;
-  border-radius: 0px 0px 15px 15px;
+  border-radius: 0px 0px 25px 25px;
   background-image: url('../../assets/circle_opaque.svg');
-  box-shadow: rgb(173, 173, 173) 1px 3px 1px;
+  /* box-shadow: rgb(128, 126, 126) 1px 3px 1px; */
   background-size: 5px;
   background-repeat: repeat;
+  border: 1px solid rgb(94, 94, 94);
   
 
 }
@@ -80,10 +80,36 @@ input[type=range]::-webkit-slider-runnable-track  {
   -webkit-appearance: none;
   box-shadow: none;
   border: none;
-  background:grey;
+  background:linear-gradient(0.25turn,red,green);
   border-radius: 20px;
   height: 5px;
   
+}
+
+
+
+@media (min-width:1000px) {
+  
+
+  .slider::-webkit-slider-thumb {
+
+  width: 4vw;
+  height: 3vw;
+}
+
+input[type='range']{
+    -webkit-apearence:none;
+    background: transparent;
+    cursor: pointer;
+    width:30vw;
+
+}
+
+
+
+
+
+
 }
 
 

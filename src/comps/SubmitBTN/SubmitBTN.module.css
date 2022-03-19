@@ -5,12 +5,45 @@
     margin-top: 15vh;
     width: 100%;
     border-radius: 100px;
-    background-color: rgb(141, 141, 141);
-    border: none;
+
+    border: 4px solid black;
     font-size: 1em;
     padding: 0.5vh;
     color: white;
     font-family: Bungee;
     letter-spacing: 0.7vh;
+    color: rgb(0, 0, 0);
+    
+}
+
+
+
+.SubmitButton:hover{
+
+animation: appear;
+animation-duration: infinite;
+  animation-fill-mode: both;
+}
+
+
+
+@media (min-width:1000px) {
+  
+
+.SubmitButton {
+
+  width: 50%;
+
+}
+
+}
+
+
+
+
+@keyframes appear {
+
+    from{background-color: white;}
+    to{background-color: #a5a5a5;}
     
 }

@@ -17,54 +17,74 @@
 
 
 
+
 .image1{
 
     width: 30vw;
-    margin-top: 0vh;
+margin: 0px;
     animation: appear1;
     animation-duration: 1s;
-    border-radius: 20%;
+    border-radius: 2%;
+     border: 1px solid black;
 }
 
 .image2{
   
       width: 30vw;
-    margin-top: 0vh;
+margin: 0px;
     animation: appear2;
     animation-duration: 1s;
-    border-radius: 20%;
+    border-radius: 2%;
+    
+     border: 1px solid black;
 }
 
 .image3{
 
        width: 30vw;
-    margin-top: 0vh;
+margin: 0px;
     animation: appear3;
     animation-duration: 1s;
-    border-radius: 20%;
+    border-radius: 2%;
+     border: 1px solid black;
 }
 
 .image4{
 
      width: 30vw;
-    margin-top: 0vh;
+ margin: 0px;
     animation: appear4;
     animation-duration: 1s;
-    border-radius: 20%;
+    border-radius: 2%;
+     border: 1px solid black;
 }
 
 .image5{
 
        width: 30vw;
-    margin-top: 0vh;
+    margin: 0px;
     animation: appear5;
     animation-duration: 1s;
-    border-radius: 20%;
+    border-radius: 2%;
+    border: 1px solid black;
 }
 
 
 
 @media (min-width:800px) {
+
+.image1{ width: 20vw;}
+.image2{ width: 20vw;}
+.image3{ width: 20vw;}
+.image4{ width: 20vw;}
+.image5{ width: 20vw;}
+
+
+}
+
+
+
+@media (min-width:1000px) {
 
 .image1{ width: 10vw;}
 .image2{ width: 10vw;}

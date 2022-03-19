@@ -9,6 +9,8 @@
     width: 100vw;
     position: absolute;
     top: 0;
+    margin: 0px;
+    padding: 0px;
 }
 
 
@@ -22,3 +24,18 @@
     margin-top: 15vh;
 
 }
+
+
+@media (min-width:1000px) {
+
+
+.mainTitle{
+
+
+    font-size: 4vw;
+
+
+}
+}
+
+
