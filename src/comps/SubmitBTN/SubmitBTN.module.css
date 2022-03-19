@@ -16,16 +16,15 @@
     
 }
 
-
-
 .SubmitButton:hover{
 
-animation: appear;
-animation-duration: infinite;
+  animation: appear;
+  animation-duration: infinite;
   animation-fill-mode: both;
 }
 
 
+/* Media queries */
 
 @media (min-width:1000px) {
   
@@ -34,11 +33,7 @@ animation-duration: infinite;
 
   width: 50%;
 
-}
-
-}
-
-
+}}
 
 
 @keyframes appear {

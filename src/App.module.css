@@ -2,7 +2,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Lobster&display=swap');
 
-
 .App{
     background-color: #dddddd;
     height: 100vh;
@@ -11,11 +10,7 @@
     top: 0;
     margin: 0px;
     padding: 0px;
-}
-
-
-
-.mainTitle{
+}.mainTitle{
 
     font-family: Lobster;
     text-align: center;
@@ -25,16 +20,12 @@
 
 }
 
+/* Media queries */
 
 @media (min-width:1000px) {
 
-
 .mainTitle{
-
-
-    font-size: 4vw;
-
-
+font-size: 4vw;
 }
 }
 

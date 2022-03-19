@@ -4,24 +4,18 @@
 .MoodBox{
     
     margin: auto;
-
     height: 38,19vh;
     width: 50%;
     text-align: center;
     margin-top: 10vh;
     border-radius: 100px;
     margin-bottom: 5vh;
- 
-}
-
-
-
-
+ }
 
 .image1{
 
     width: 30vw;
-margin: 0px;
+    margin: 0px;
     animation: appear1;
     animation-duration: 1s;
     border-radius: 2%;
@@ -30,29 +24,28 @@ margin: 0px;
 
 .image2{
   
-      width: 30vw;
-margin: 0px;
+    width: 30vw;
+    margin: 0px;
     animation: appear2;
     animation-duration: 1s;
     border-radius: 2%;
-    
-     border: 1px solid black;
+    border: 1px solid black;
 }
 
 .image3{
 
-       width: 30vw;
-margin: 0px;
+    width: 30vw;
+    margin: 0px;
     animation: appear3;
     animation-duration: 1s;
     border-radius: 2%;
-     border: 1px solid black;
+    border: 1px solid black;
 }
 
 .image4{
 
      width: 30vw;
- margin: 0px;
+    margin: 0px;
     animation: appear4;
     animation-duration: 1s;
     border-radius: 2%;
@@ -61,7 +54,7 @@ margin: 0px;
 
 .image5{
 
-       width: 30vw;
+    width: 30vw;
     margin: 0px;
     animation: appear5;
     animation-duration: 1s;
@@ -78,8 +71,6 @@ margin: 0px;
 .image3{ width: 20vw;}
 .image4{ width: 20vw;}
 .image5{ width: 20vw;}
-
-
 }
 
 
@@ -91,8 +82,6 @@ margin: 0px;
 .image3{ width: 10vw;}
 .image4{ width: 10vw;}
 .image5{ width: 10vw;}
-
-
 }
 
 

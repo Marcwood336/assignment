@@ -1,13 +1,10 @@
 
-
 .ResponsePhrase{
 position: absolute;
     height: 100vh;
     width: 100vw;
   top: 0;
 }
-
-
 .responseTitle{
  
     font-family: Lobster;
@@ -19,21 +16,11 @@ position: absolute;
     animation-duration: 1s;
 }
 
-
-
 @media (min-width:1000px) {
 
-
 .responseTitle{
-
-
-    font-size: 4vw;
-
-
-}
-}
-
-
+font-size: 4vw;
+}}
 
 @keyframes appear {
 

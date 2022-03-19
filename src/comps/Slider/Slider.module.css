@@ -1,8 +1,4 @@
 
-
-
-
-
 .SliderContainer{
   
     margin: auto;
@@ -14,10 +10,6 @@
     
 }
 
-
-
-
-
 input[type='range']{
     -webkit-apearence:none;
     background: transparent;
@@ -26,14 +18,9 @@ input[type='range']{
 
 }
 
-
-
-
 .slider {
   -webkit-appearance: none;
 
-
-  
 }
 
 .slider::before{
@@ -42,8 +29,8 @@ input[type='range']{
   font-size: 2vh;
    margin-right: 1vh ;
    color: red;
-
 }
+
 .slider::after{
   content:'+';
    font-weight: 900;
@@ -52,27 +39,20 @@ input[type='range']{
   color: green;
 }
 
-
-
-
-
 .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
   width: 13vw;
   height: 3vw;
-  background: #808080;
+  background: #dddddd;
   cursor: pointer;
   border-radius: 0px 0px 25px 25px;
   background-image: url('../../assets/circle_opaque.svg');
-  /* box-shadow: rgb(128, 126, 126) 1px 3px 1px; */
+  box-shadow: rgb(128, 126, 126) 1px 3px 1px;
   background-size: 5px;
   background-repeat: repeat;
-  border: 1px solid rgb(94, 94, 94);
-  
-
-}
-
+  border: 1px solid rgb(121, 121, 121);
+  }
 
 
 
@@ -80,18 +60,46 @@ input[type=range]::-webkit-slider-runnable-track  {
   -webkit-appearance: none;
   box-shadow: none;
   border: none;
-  background:linear-gradient(0.25turn,red,green);
+  background:linear-gradient(0.25turn,#ff6961,#80bc2a);
   border-radius: 20px;
   height: 5px;
-  
-}
+  }
 
+.slider::-moz-range-thumb
+ {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 13vw;
+  height: 3vw;
+  background: #dddddd;
+  cursor: pointer;
+  border-radius: 15px 15px 15px 15px;
+  background-image: url('../../assets/circle_opaque.svg');
+  box-shadow: rgb(128, 126, 126) 1px 3px 1px;
+  background-size: 5px;
+  background-repeat: repeat;
+  border: 1px solid rgb(121, 121, 121);
+  }
+
+.slider::-moz-range-track{
+  -webkit-appearance: none;
+  box-shadow: none;
+  border: none;
+  background:linear-gradient(0.25turn,#ff6961,#80bc2a);
+  border-radius: 20px;
+  height: 5px;
+  }
+
+
+
+
+/* Media queries */
 
 
 @media (min-width:1000px) {
   
 
-  .slider::-webkit-slider-thumb {
+.slider::-webkit-slider-thumb {
 
   width: 4vw;
   height: 3vw;
@@ -106,10 +114,11 @@ input[type='range']{
 }
 
 
-
-
-
-
+.slider::-moz-range-thumb
+ {
+  width: 4vw;
+  height: 3vw;
+ }
 }
 
 

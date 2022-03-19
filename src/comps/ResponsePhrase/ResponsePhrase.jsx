@@ -29,23 +29,13 @@ let backgroundClass = ''
             default :
               {backgroundClass='#80bc2a'}
               break
+            }
 
 
-
-  }
-
-console.log(props);
     return(<div className={classes.ResponsePhrase} style={{backgroundColor:backgroundClass}}>
-        <h1 className={classes.responseTitle} >{props.phrase}</h1>
-
-        </div>)
+           <h1 className={classes.responseTitle} >{props.phrase}</h1>
+           </div>)
 }
 
 
 export default ResponsePhrase;
-
-// #a5a5a5
-// #fddd5c
-// #a5a5a5
-// #77dd76
-// #80bc2a
